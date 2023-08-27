@@ -7,15 +7,241 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: #fafafa;
 }
 
-.nav-locate-shop span::before {
-  background-image: url(/assets/stores.svg);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  position: absolute;
-  background-size: 15px;
-  content: "";
+/* NAVBAR STYLES */
+
+.page-heading {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 5px 0px rgba(196, 196, 196, 0.75);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1250px;
+  padding: 20px;
+  height: 100%;
+  z-index: 9999;
+}
+
+.nav-locate-shop {
+  margin-left: auto;
+}
+
+.nav-locate-shop a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-locate-shop img {
   height: 22px;
   width: 15px;
+}
+
+.nav-logo img {
+  width: 50px;
+}
+
+.nav-options {
+  text-transform: uppercase;
+}
+
+.nav-options ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-options ul li {
+  margin: 0px 18px;
+}
+
+.nav-options ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN CONTENT STYLES */
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* MAIN ADVERTISEMENT STYLES */
+
+.main-advertisement {
+  background-color: #1e3932;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.main-advertisement-img img {
+  height: 100%;
+}
+
+.main-advertisement-banner {
+  display: flex;
+  align-items: center;
+}
+
+.main-advertisement-banner p {
+  font-size: 3.2rem;
+  color: #fafafa;
+  text-align: center;
+  padding: 0 80px;
+}
+
+/* MAIN JOB STYLES */
+
+.main-job-join {
+  background-color: #d4e9e2;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.main-job-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00754a;
+  text-align: center;
+}
+
+.main-job-banner h2 {
+  font-size: 3.2rem;
+  margin: 10px 0px;
+}
+
+.main-job-banner p {
+  font-size: 1.2rem;
+  margin: 30px 0px;
+}
+
+.main-job-banner a {
+  text-decoration: none;
+  color: #00754a;
+  padding: 5px 15px;
+  border: 1px solid #00754a;
+  border-radius: 20px;
+}
+
+/* FOOTER SYLES */
+
+.footer {
+  box-shadow: 0px -2px 5px 0px rgba(196, 196, 196, 0.75);
+  width: 100%;
+  margin-top: 30px;
+}
+
+.upper-footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.footer-information {
+  display: flex;
+  flex-direction: row;
+}
+
+.conj-list {
+  padding: 0px 20px;
+}
+
+.conj-list h3 {
+  margin-bottom: 40px;
+}
+
+.f-list {
+  list-style: none;
+  color: rgb(161, 161, 161);
+  margin: 0;
+  padding: 0;
+}
+
+.f-list li {
+  margin-bottom: 25px;
+}
+
+.footer-fiscaldata img {
+  width: 65px;
+}
+
+.footer hr {
+  max-width: 1200px;
+  opacity: 0.2;
+}
+
+.lower-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.footer-social-media {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-social-media i {
+  font-size: 2.3rem;
+  padding: 0px 12px;
+}
+
+.footer-secondary-information span {
+  color: rgb(194, 194, 194);
+  padding: 0px 15px;
+}
+
+.footer-secondary-information span:not(:last-child)::after {
+  position: relative;
+  content: "|";
+  left: 15px;
+}
+
+.footer-copy {
+  color: rgb(194, 194, 194);
+  font-size: .9rem;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.footer-copy p {
+  padding: 1px;
+  margin: 0;
+}
+
+.somehash {
+  font-size: .6rem;
 }
