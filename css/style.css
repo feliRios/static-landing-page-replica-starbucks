@@ -1,0 +1,21 @@
+* {
+  font-family: "SoDo Sans SemiBold";
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.nav-locate-shop span::before {
+  background-image: url(/assets/stores.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 15px;
+  content: "";
+  height: 22px;
+  width: 15px;
+}
