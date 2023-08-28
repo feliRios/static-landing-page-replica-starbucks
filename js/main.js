@@ -36,3 +36,22 @@ if(window.innerWidth < 1025)
     })
   })
 }
+
+
+// Responsive menu
+
+const btn = document.querySelector('.nav-menu-button');
+btn.addEventListener('click', () => {
+  const menu = document.querySelector('.nav-options');
+  const locateShop = document.querySelector('.nav-locate-shop')
+  menu.classList.toggle('responsive-active');
+  locateShop.classList.toggle('locate-responsive-active');
+  if (menu.classList.contains('responsive-active'))
+  {
+    document.body.style.overflow='hidden'
+  }
+  else
+  {
+    document.body.style.overflow='scroll'
+  }
+});
