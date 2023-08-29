@@ -103,8 +103,13 @@ main {
   margin-top: 30px;
 }
 
+.main-advertisement-img {
+  max-width: 50%;
+}
+
 .main-advertisement-img img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .main-advertisement-banner {
@@ -388,6 +393,9 @@ main {
     width: 100%;
     height: 95vw;
     flex-direction: column;
+  }
+  .main-advertisement-img {
+    max-width: 100%;
   }
   .main-advertisement-img img {
     max-width: 100%;
