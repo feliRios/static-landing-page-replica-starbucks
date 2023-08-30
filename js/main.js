@@ -42,6 +42,7 @@ if(window.innerWidth < 1025)
 
 const btn = document.querySelector('.nav-menu-button');
 btn.addEventListener('click', () => {
+  btn.classList.toggle('menu-button-active')
   const menu = document.querySelector('.nav-options');
   const locateShop = document.querySelector('.nav-locate-shop')
   menu.classList.toggle('responsive-active');
